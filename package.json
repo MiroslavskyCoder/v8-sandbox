@@ -1,6 +1,6 @@
 {
   "name": "@bymiroslavsky/v8-sandbox",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "V8 Sandbox",
   "homepage": "http://github.com/MiroslavskyCoder/v8-sandbox",
   "main": "lib/index.js",

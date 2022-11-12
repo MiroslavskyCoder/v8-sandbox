@@ -1,6 +1,6 @@
 {
   "name": "@bymiroslavsky/v8-sandbox",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "V8 Sandbox",
   "homepage": "http://github.com/MiroslavskyCoder/v8-sandbox",
   "main": "lib/index.js",
@@ -28,6 +28,7 @@
     "test",
     "examples",
     "README.md",
+    "binding.gyp",
     "LICENSE"
   ],
   "devDependencies": {

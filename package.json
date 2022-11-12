@@ -1,6 +1,6 @@
 {
   "name": "@bymiroslavsky/v8-sandbox",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "V8 Sandbox",
   "homepage": "http://github.com/MiroslavskyCoder/v8-sandbox",
   "main": "lib/index.js",
@@ -13,7 +13,8 @@
     "rebuild": "node-gyp configure rebuild",
     "test": "TS_NODE_IGNORE='node_modules,dist' mocha -r ts-node/register test/index.ts",
     "clean": "rm -rf dist build",
-    "lint": "eslint 'lib/**/*.js'"
+    "lint": "eslint 'lib/**/*.js'",
+    "install": "npm run rebuild"
   },
   "author": "byMiroslavsky",
   "license": "ISC",
@@ -27,8 +28,7 @@
     "test",
     "examples",
     "README.md",
-    "LICENSE",
-    "runtime.js"
+    "LICENSE"
   ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "^23.0.2",

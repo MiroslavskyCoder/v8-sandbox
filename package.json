@@ -2,7 +2,7 @@
   "name": "@bymiroslavsky/v8-sandbox",
   "version": "0.1.0",
   "description": "V8 Sandbox",
-  "homepage": "http://github.com/fulcrumapp/v8-sandbox",
+  "homepage": "http://github.com/MiroslavskyCoder/v8-sandbox",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
   "typings": "lib/index.d.ts",

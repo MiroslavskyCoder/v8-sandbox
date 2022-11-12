@@ -1,9 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+import bindings from "bindings";
 
-const NativeSandbox = require('bindings')('sandbox').Sandbox;
+const NativeSandbox = bindings('sandbox').Sandbox;
 
-const RUNTIME = fs.readFileSync(path.join(__dirname, 'runtime.js')).toString();
+const RUNTIME = fs.readFileSync(path.join(__dirname, "..", "..", "runtime.js")).toString();
 
 export interface WorkerMessage {
   messageId: number;
@@ -19,7 +20,6 @@ export default class Worker {
   native: any = null;
 
   connected: boolean = false;
-
   messageId: number = null;
 
   constructor() {

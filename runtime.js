@@ -1,4 +1,4 @@
-const environment: any = global;
+const environment = global;
 
 environment.dispatch = (name, args, callback) => {
   if (typeof callback !== 'function') {

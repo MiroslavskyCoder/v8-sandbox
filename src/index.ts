@@ -1,5 +1,6 @@
-import Sandbox, { Result } from './host/sandbox';
-import SandboxCluster from './cluster/cluster';
+import module from "module";
+import path from "path";
 
-export default Sandbox;
-export { Sandbox, SandboxCluster, Result };
+const requireNative = module.createRequire(import.meta.url);
+
+export default requireNative(path.resolve(__dirname, "..", "build/Release/sandbox.node"));
